@@ -148,14 +148,16 @@ margin-bottom: 1rem;
 
 @media (max-width: 490px){
 
-img {
-  content: url("./images//image-product-mobile.jpg");
-}
 
   .card-container {
     grid-template-columns: 1fr;
     width: 25rem;
   }
+
+.card-image img {
+    content: url("./images/image-product-mobile.jpg");
+  }
+  
 
 
 }
