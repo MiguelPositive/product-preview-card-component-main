@@ -1,0 +1,187 @@
+
+@font-face {
+  src: url("./fonts/Roboto-Medium.ttf");
+  font-family: "Roboto";
+  font-display: swap;
+}
+
+@font-face {
+  src: url("./fonts/AbrilFatface-Regular.ttf");
+  font-family: "Abril Fatface";
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+  font-size: 1rem;
+}
+
+
+body {
+  margin: 0;
+}
+
+
+
+.global-container {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #fdedec;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.card-container {
+  width: 30rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+
+.card-text {
+
+  background-color: white;
+  padding: 1.3rem;
+ 
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.cost  {
+  
+display: flex;
+justify-content: start;
+align-items: center;
+margin-bottom: 1rem;
+
+
+}
+
+.add-perfume {
+
+  font-size: 0.8rem;
+  height: 2.2rem;
+  background-color:  #3D8357;
+  border-radius: 0.3rem;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+}
+
+
+
+.text:nth-child(1) {
+
+  opacity: 0.4;
+  font-size: 0.7rem;
+}
+
+.text:nth-child(2) {
+
+  font-weight: initial;
+  font-family: "Abril Fatface";
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+
+  
+  
+}
+
+.text:nth-child(3) {
+ 
+ opacity: 0.6;
+ font-size: 0.8rem;
+ line-height: 1.3rem;
+}
+
+
+.cost :nth-child(2) {
+
+  opacity: 0.6;
+  font-size: 0.8rem;
+  text-decoration: line-through;
+
+}
+
+
+
+.cost p {
+  display: inline;
+  margin: 0;
+}
+
+
+.add-perfume img {
+
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+  
+}
+
+
+.cost p:nth-child(1){
+
+  font-family: "Abril Fatface";
+  margin-right: 0.8rem;
+  font-size: 1.5rem;
+  color: #3D8357;
+  
+}
+
+
+@media (max-width: 490px){
+
+img {
+  content: url("./images//image-product-mobile.jpg");
+}
+
+  .card-container {
+    grid-template-columns: 1fr;
+    width: 25rem;
+  }
+
+
+}
+
+@media (max-width: 490px){
+
+ 
+  
+    .card-container {
+      grid-template-columns: 1fr;
+      width: 20rem;
+    }
+  
+  
+  }
+  
+  @media (max-width: 360px){
+
+ 
+  
+    .card-container {
+      grid-template-columns: 1fr;
+      width: 17rem;
+    }
+  
+  
+  }
+
+
